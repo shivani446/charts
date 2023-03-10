@@ -30,6 +30,10 @@ jobs:
         with:
           version: v3.8.1
 
+      - name: Adding bitnamirepo
+        run: |
+          helm repo add bitnami https://charts.bitnami.com/bitnami
+          
       - uses: actions/setup-python@v2
         with:
           python-version: 3.7
@@ -54,10 +58,6 @@ jobs:
           node_image: "kindest/node:v${{ matrix.k8s }}"
         # Only build a kind cluster if there are chart changes to test.
         if: steps.list-changed.outputs.changed == 'true'
-
-      - name: Adding bitnamirepo
-        run: |
-          helm repo add bitnami https://charts.bitnami.com/bitnami
 
       - name: Run chart-testing (install)
         run: ct install
