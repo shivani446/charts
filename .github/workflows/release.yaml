@@ -7,7 +7,7 @@ on:
 
 jobs:
   release:
-    if: github.repository == 'Improwised/charts'
+    if: github.repository == 'shivani446/charts'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
