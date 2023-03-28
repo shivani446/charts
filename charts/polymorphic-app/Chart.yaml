@@ -4,9 +4,6 @@ description: A Helm chart for deploying any custom applications, specifically po
 maintainers:
   - name: improwised
 
-maintainers:
-  - email: rakshit@improwised.com
-    name: rakshit
 
 # A chart can be either an 'application' or a 'library' chart.
 #
