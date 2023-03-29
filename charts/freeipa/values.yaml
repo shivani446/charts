@@ -42,8 +42,8 @@ image:
 args:
   realm: EXAMPLE.ORG
   domain: example.org
-  dspassword: ASDF1poiu2QWER3mnbv4 #pragma: allowlist secret
-  adminpassword: ASDF1poiu2QWER3mnbv4 #pragma: allowlist secret
+  dspassword: ASDF1poiu2QWER3mnbv4  # pragma: allowlist secret
+  adminpassword: ASDF1poiu2QWER3mnbv4 # pragma: allowlist secret
   nohostdns: true
   nontp: true
   setupdns: false
